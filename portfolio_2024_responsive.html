@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kali Conilleau-Girardot</title>
+    <link rel="stylesheet" type="text/css" href="style_responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Bandeau de titre -->
+
+    <!-- Menu -->
+    <div class="menu">
+        <ul>
+            <li><a href="#accueil" onclick="showPage('accueil')">Accueil</a></li>
+            <li><a href="#déambulations-nocturnes" onclick="showPage('déambulations-nocturnes')">Déambulations
+                    Nocturnes (2024)</a></li>
+            <li><a href="#stan smith" onclick="showPage('stan smith')">Campagne Adidas Stan Smith (2024)</a></li>
+            <li><a href="#ensaama-fanzine-club" onclick="showPage('fanzine-club')">Ensaama Fanzine Club : vidéo et
+                    musique (2024)</a></li>
+            <li><a href="#meet-your-legend" onclick="showPage('meet-your-legend')">Meet Your Legend (2024)</a></li>
+            <li><a href="#etoffes" onclick="showPage('etoffes')">étoffes (2024)</a></li>
+            <li><a href="#hs-fest" onclick="showPage('hs-fest')">Festival Hors-Sujet - Gare XP (2024)</a></li>
+            <li><a href="#girl-power" onclick="showPage('girl-power')">Arte - Girl Power (2024)</a></li>
+            <li><a href="#references" onclick="showPage('references')">Références</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenu -->
+     <!-- Page Accueil -->
+     <div id="accueil" class="page active">
+
+        <div class="image-accueil">
+            <img src="images/accueil/gif-bleu-rose.gif" alt="animation-accueil">
+        </div>
+    </div>
+    <div class="content">
+        
+
+        <!-- Page déambulations -->
+        <div id="déambulations-nocturnes" class="page">
+            <p class="titre-page deambulations-color">Déambulations Nocturnes - édition de photographies personnelles
+                (2024)</p>
+
+            <!-- Galerie d'images défilantes -->
+            <!-- <div class="carousel-container">
+                <div class="carousel">
+                    <img src="images/déambulations/1couv.jpg" alt="couverture" onclick="openLightbox(this.src)">
+                    <img src="images/déambulations/2dos.jpg" alt="dos" onclick="openLightbox(this.src)">
+                    <img src="images/déambulations/3.jpg" alt="3" onclick="openLightbox(this.src)">
+                    <img src="images/déambulations/4.jpg" alt="4" onclick="openLightbox(this.src)">
+                    <img src="images/déambulations/5.jpg" alt="5" onclick="openLightbox(this.src)">
+                    <img src="images/déambulations/6.jpg" alt="6" onclick="openLightbox(this.src)">
+
+                </div>
+            </div> -->
+            <!-- Boutons de navigation
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button> -->
+
+            <section class="container">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-1" src="images/déambulations/1couv.jpg" alt="couverture"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-2" src="images/déambulations/2dos.jpg" alt="dos"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-3" src="images/déambulations/3.jpg" alt="3" onclick="openLightbox(this.src)" />
+                        <img id="slide-4" src="images/déambulations/4.jpg" alt="4" onclick="openLightbox(this.src)" />
+                        <img id="slide-5" src="images/déambulations/5.jpg" alt="5" onclick="openLightbox(this.src)" />
+                        <img id="slide-6" src="images/déambulations/6.jpg" alt="6" onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                        <a href="#slide-4"></a>
+                        <a href="#slide-5"></a>
+                        <a href="#slide-6"></a>
+                    </div>
+                </div>
+            </section>
+
+            <div id="mosaique" class="image-horizontale">
+                <img src="images/déambulations/mosaïque.jpg" alt="photographies de toutes les pages de l'édition"
+                    onclick="openLightbox(this.src)">
+            </div>
+
+            <section class="container">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-1" src="images/déambulations/images-numeriques/1.jpg" alt="couverture"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-2" src="images/déambulations/images-numeriques/2.jpg" alt="dos"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-3" src="images/déambulations/images-numeriques/3.jpg" alt="3"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-4" src="images/déambulations/images-numeriques/4.jpg" alt="4"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-5" src="images/déambulations/images-numeriques/5.jpg" alt="5"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-6" src="images/déambulations/images-numeriques/6.jpg" alt="6"
+                            onclick="openLightbox(this.src)" />
+                        <!-- ajouter le reste des images -->
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                        <a href="#slide-4"></a>
+                        <a href="#slide-5"></a>
+                        <a href="#slide-6"></a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="deux-images">
+                <img src="images/déambulations/jpg-pages/deambulations_dos.jpg" alt="dos" onclick="openLightbox(this.src)">
+                <img src="images/déambulations/jpg-pages/deambulations_couv.jpg" alt="couverture" onclick="openLightbox(this.src)">
+            </div>
+
+            <div id="deambulations-jpg-pages" class="image-horizontale border">
+                <img src="images/déambulations/jpg-pages/deambulations_02.jpg" alt="page-02" onclick="openLightbox(this.src)">
+                <img src="images/déambulations/jpg-pages/deambulations_03.jpg" alt="page-03" onclick="openLightbox(this.src)">
+                <img src="images/déambulations/jpg-pages/deambulations_04.jpg" alt="page-04" onclick="openLightbox(this.src)">
+                <img src="images/déambulations/jpg-pages/deambulations_05.jpg" alt="page-05" onclick="openLightbox(this.src)">
+                <img src="images/déambulations/jpg-pages/deambulations_06.jpg" alt="page-06" onclick="openLightbox(this.src)">
+                <img src="images/déambulations/jpg-pages/deambulations_07.jpg" alt="page-07" onclick="openLightbox(this.src)">
+                <img src="images/déambulations/jpg-pages/deambulations_08.jpg" alt="page-08" onclick="openLightbox(this.src)">
+                <img src="images/déambulations/jpg-pages/deambulations_09.jpg" alt="page-09" onclick="openLightbox(this.src)">
+                <img src="images/déambulations/jpg-pages/deambulations_10.jpg" alt="page-10" onclick="openLightbox(this.src)">
+                <img src="images/déambulations/jpg-pages/deambulations_11.jpg" alt="page-11" onclick="openLightbox(this.src)">
+                <img src="images/déambulations/jpg-pages/deambulations_12.jpg" alt="page-12" onclick="openLightbox(this.src)">
+                <img src="images/déambulations/jpg-pages/deambulations_13.jpg" alt="page-13" onclick="openLightbox(this.src)">
+                <img src="images/déambulations/jpg-pages/deambulations_14.jpg" alt="page-14" onclick="openLightbox(this.src)">
+                <img src="images/déambulations/jpg-pages/deambulations_15.jpg" alt="page-15" onclick="openLightbox(this.src)">
+                <img src="images/déambulations/jpg-pages/deambulations_16.jpg" alt="page-16" onclick="openLightbox(this.src)">
+                <img src="images/déambulations/jpg-pages/deambulations_17.jpg" alt="page-17" onclick="openLightbox(this.src)">
+                <img src="images/déambulations/jpg-pages/deambulations_18.jpg" alt="page-18" onclick="openLightbox(this.src)">
+                <img src="images/déambulations/jpg-pages/deambulations_19.jpg" alt="page-19" onclick="openLightbox(this.src)">
+                <img src="images/déambulations/jpg-pages/deambulations_20.jpg" alt="page-20" onclick="openLightbox(this.src)">
+
+            </div>
+
+        </div>
+
+        <!-- Page stan smith -->
+        <div id="stan smith" class="page">
+            <p class="stan-color titre-page">Campagne “make your own” Adidas Stan Smith</p>
+            <p class="stan-color texte-page">Il est demandé une campagne avec un déploiement large (expérience 360°) qui
+                permette
+                de vivre au mieux
+                des sensations avec Adidas Originals. J’ai imaginé la campagne “make your own” basée sur un évènement de
+                création ouvert à tous.
+
+            </p>
+            <p class="stan-color sous-titre">affiche</p>
+
+            <div id="affiche_stan_smith" class="image-verticale">
+                <img src="images/stan smith/affiche.jpg" alt="affiche" onclick="openLightbox(this.src)">
+            </div>
+
+            <p class="stan-color texte-page">Chaussure Stan Smith découpée, simili-cuir, fil de laine.</p>
+
+            <p class="stan-color sous-titre">vidéo</p>
+
+            <p class="stan-color texte-page">La vidéo de promotion de la campagne a été réalisée en stop-motion. Elle
+                reprend le
+                processus de création
+                de l’affiche qui correspond à celui proposé lors l’évènement atelier de création de sa propre Stan
+                Smith.
+
+            </p>
+
+            <div id="vidéo_stan_smith" class="video">
+                <video src="vidéos/vidéo make your own.mp4" controls type="video/mp4"></video>
+            </div>
+
+            <p class="stan-color sous-titre">étapes de réalisation</p>
+
+            <div class="etapes-realisation">
+                <img src="images/stan smith/étapes de réalisation/1.jpg" alt="Étape 1" onclick="openLightbox(this.src)">
+                <img src="images/stan smith/étapes de réalisation/2.jpg" alt="Étape 2" onclick="openLightbox(this.src)">
+                <img src="images/stan smith/étapes de réalisation/3.jpg" alt="Étape 3" onclick="openLightbox(this.src)">
+                <img src="images/stan smith/étapes de réalisation/4.jpg" alt="Étape 4" onclick="openLightbox(this.src)">
+            </div>
+
+            <p class="stan-color sous-titre">évènement</p>
+
+            <p class="stan-color texte-page">L’évènement que j’ai imaginé est un atelier de création géant de sa propre
+                Stan Smith.
+                Tout le monde peut
+                venir y réaliser un modèle soi-même, donc collector, de la chaussure emblématique. Tout le nécessaire
+                est présent sur place : patrons, cuir, matériel de couture/perçage/collage, semelles, lassets.<br>
+                <br>
+                Il a lieu dans différents espaces verts des villes :<br>
+                - il y en a partout, le rendant facilement accessible pour beaucoup<br>
+                - le vert de ces espaces, associé à du mobilier blanc, permet de recréer la bichromie des Stan Smith
+            </p>
+
+            <!-- <div id="visuel_évènement" class="image-horizontale">
+                <img src="images/stan smith/jardin luxembourg.jpg" alt="visuel évènement make your own"
+                    onclick="openLightbox(this.src)">
+            </div> -->
+
+            <!-- <p class="stan-color">Jardin du Luxembourg, table et tabourets générés par IA</p> -->
+
+            <div id="mockup-stan-smith" class="image-horizontale">
+                <img src="images/stan smith/stan-smith-mockup.jpg" alt="mockup affiche"
+                    onclick="openLightbox(this.src)">
+            </div>
+        </div>
+
+        <!-- page fanzine club -->
+        <div id="fanzine-club" class="page">
+            <p class="titre-page">Ensaama Fanzine Club : composition musicale et création vidéo</p>
+            <p class="texte-page">(vidéo déconseillée aux personnes photosensibles ou épilectiques)</p>
+            <div id="vidéo-fanzine-club" class="video">
+                <video src="vidéos/ensaama fanzine club vidéo.mp4" controls type="video/mp4"></video>
+            </div>
+
+            <p class="texte-page">Création d’une vidéo dans l’esthétique des GIF animés (logiciel: After Effects), pour
+                la communication
+                autour du Fanzine Club de l’ENSAAMA. J’ai choisi une esthétique numérique et digitale qui se rapporte à
+                l’univers des GIF animés.
+                <br><br>
+                J’ai composé la musique (logiciel: FL Studio) en jouant les différentes mélodies sur un clavier, relié à
+                des instruments virtuels qui correspondent à la direction artistique.
+                <br><br>
+                J’ai exploré les accumulations de texte ("ensaama fanzine club"), liées à l’idée des lignes de code. Je
+                les ai dupliquées,
+                superposées, modifiées de plusieurs manières pour obtenir des fonds/textures/images animés. Je me suis
+                servi de ces images animées comme d'éléments uniques, de superposition, de texture, de fond, mais aussi
+                comme habillage de texte. J’ai aussi utilisé des images de spectres audio et vidéo trouvés dans les
+                logiciels de montage et de création musicale que j’utilise.
+                <br><br>
+                Enfin, j’ai décidé de travailler avec des couleurs puissantes, que l’on peut obtenir seulement
+                numériquement, afin de créer l’esthétique voulue.
+            </p>
+
+
+
+            <section class="container">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-1" src="images/fanzine-club/stills-horizontal/1.jpg" alt="1"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-2" src="images/fanzine-club/stills-horizontal/2.jpg" alt="2"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-3" src="images/fanzine-club/stills-horizontal/3.jpg" alt="3"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-4" src="images/fanzine-club/stills-horizontal/4.jpg" alt="4"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-5" src="images/fanzine-club/stills-horizontal/5.jpg" alt="5"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-6" src="images/fanzine-club/stills-horizontal/6.jpg" alt="6"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-7" src="images/fanzine-club/stills-horizontal/7.jpg" alt="7"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-8" src="images/fanzine-club/stills-horizontal/8.jpg" alt="8"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-9" src="images/fanzine-club/stills-horizontal/9.jpg" alt="9"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-10" src="images/fanzine-club/stills-horizontal/10.jpg" alt="10"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-11" src="images/fanzine-club/stills-horizontal/11.jpg" alt="11"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-12" src="images/fanzine-club/stills-horizontal/12.jpg" alt="12"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-13" src="images/fanzine-club/stills-horizontal/13.jpg" alt="13"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-14" src="images/fanzine-club/stills-horizontal/14.jpg" alt="14"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-15" src="images/fanzine-club/stills-horizontal/15.jpg" alt="15"
+                            onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                        <a href="#slide-4"></a>
+                        <a href="#slide-5"></a>
+                        <a href="#slide-6"></a>
+                        <a href="#slide-7"></a>
+                        <a href="#slide-8"></a>
+                        <a href="#slide-9"></a>
+                        <a href="#slide-10"></a>
+                        <a href="#slide-11"></a>
+                        <a href="#slide-12"></a>
+                        <a href="#slide-13"></a>
+                        <a href="#slide-14"></a>
+                        <a href="#slide-15"></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-1" src="images/fanzine-club/fanzine/F.jpg" alt="F"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-2" src="images/fanzine-club/fanzine/A.jpg" alt="A"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-3" src="images/fanzine-club/fanzine/N.jpg" alt="N"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-4" src="images/fanzine-club/fanzine/Z.jpg" alt="Z"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-5" src="images/fanzine-club/fanzine/I.jpg" alt="I"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-6" src="images/fanzine-club/fanzine/N-2.jpg" alt="N-2"
+                            onclick="openLightbox(this.src)" />
+                        <img id="slide-7" src="images/fanzine-club/fanzine/E.jpg" alt="E"
+                            onclick="openLightbox(this.src)" />
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                        <a href="#slide-4"></a>
+                        <a href="#slide-5"></a>
+                        <a href="#slide-6"></a>
+                        <a href="#slide-7"></a>
+                    </div>
+                </div>
+            </section>
+
+            <p class="texte-page">J’ai aussi adapté la vidéo au format téléphone afin de la publier sur les réseaux
+                d’Ensaama Fanzine Club.
+            </p>
+
+            <div class="vertical-fanzine-club">
+                <img src="images/fanzine-club/format-telephone/1.jpg" alt="1" onclick="openLightbox(this.src)">
+                <img src="images/fanzine-club/format-telephone/2.jpg" alt="2" onclick="openLightbox(this.src)">
+                <img src="images/fanzine-club/format-telephone/3.jpg" alt="3" onclick="openLightbox(this.src)">
+            </div>
+            <div class="vertical-fanzine-club">
+                <img src="images/fanzine-club/format-telephone/4.jpg" alt="4" onclick="openLightbox(this.src)">
+                <img src="images/fanzine-club/format-telephone/5.jpg" alt="5" onclick="openLightbox(this.src)">
+                <img src="images/fanzine-club/format-telephone/6.jpg" alt="6" onclick="openLightbox(this.src)">
+            </div>
+
+        </div>
+
+        <!-- page étoffes -->
+        <div id="etoffes" class="page">
+
+            <div id="fourrure">
+                <img src="images/etoffes/2.jpg" alt="photo 2" onclick="openLightbox(this.src)">
+            </div>
+            <div id="tissus">
+                <img src="images/etoffes/1.jpg" alt="photo 1" onclick="openLightbox(this.src)">
+            </div>
+            <div id="rouleau-tissu">
+                <img src="images/etoffes/3.jpg" alt="photo 3" onclick="openLightbox(this.src)">
+            </div>
+            <div id="promo-tissu">
+                <img src="images/etoffes/4.jpg" alt="photo 4" onclick="openLightbox(this.src)">
+            </div>
+            <div id="personnage-tissu">
+                <img src="images/etoffes/5.jpg" alt="photo 5" onclick="openLightbox(this.src)">
+            </div>
+            <div id="tissu-flou">
+                <img src="images/etoffes/6.jpg" alt="photo 6" onclick="openLightbox(this.src)">
+            </div>
+            <div id="tissu-motifs">
+                <img src="images/etoffes/7.jpg" alt="photo 7" onclick="openLightbox(this.src)">
+            </div>
+            <div id="tissu-brillant">
+                <img src="images/etoffes/8.jpg" alt="photo 8" onclick="openLightbox(this.src)">
+            </div>
+            <div id="tissus-mystere">
+                <img src="images/etoffes/9.jpg" alt="photo 9" onclick="openLightbox(this.src)">
+            </div>
+            <div id="street-tissus">
+                <img src="images/etoffes/10.jpg" alt="photo 10" onclick="openLightbox(this.src)">
+            </div>
+
+        </div>
+
+        <!-- page meet your legend -->
+        <div id="meet-your-legend" class="page">
+            <p class="titre-page">Meet Your Legend : motion design et graphisme (2024)</p>
+            <p class="texte-page">Stagiaire 2 semaines dans l'entreprise Meet Your Legend à Montpellier. Réalisation de motion design, montage vidéo, graphisme et illustration.
+                <br><br>https://meetyourlegend.com/
+            </p>
+            <p class="sous-titre">Animation du logo</p>
+            <div id="anim-logo-principal" class="video">
+                <video src="vidéos/meet-your-legend/anim-logo-principal.mp4" controls type="video/mp4"></video>
+            </div>
+            <div id="anim-logo-3-lignes" class="video">
+                <video src="vidéos/meet-your-legend/anim-logo-3-lignes.mp4" controls type="video/mp4"></video>
+            </div>
+            <div id="anim-logo-3-lignes-sound" class="video">
+                <video src="vidéos/meet-your-legend/anim-logo-3-lignes-sound.mp4" controls type="video/mp4"></video>
+            </div>
+            <p class="sous-titre">Montage vidéo</p>
+            <p class="texte-page">Montage d'un trailer pour une conférence organisée par Meet Your Legend.</p>
+            <div id="trailer-sous-la-seine" class="video">
+                <video src="vidéos/meet-your-legend/trailer-sous-la-seine.mp4" controls type="video/mp4"></video>
+            </div>
+        </div>
+
+        <!-- page HS Fest -->
+         <div id="hs-fest" class="page">
+            <p class="titre-page">Festival Hors-Sujet - Gare XP : affiches (2024)</p>
+            <p class="texte-page">Étude de cas de la Gare XP et du HS Fest, puis réalisation d’affiches pour le festival.</p>
+
+            <p class="sous-titre">propositions d'affiches</p>
+            <div class="vertical-fanzine-club">
+                <img src="images/hs-fest/affiches/affiche-1.jpg" alt="affiche-1" onclick="openLightbox(this.src)">
+                <img src="images/hs-fest/affiches/affiche-2.jpg" alt="affiche-2" onclick="openLightbox(this.src)">
+                <img src="images/hs-fest/affiches/affiche-3.jpg" alt="affiche-3" onclick="openLightbox(this.src)">
+            </div>
+
+            <p class="sous-titre">typographie expérimentale</p>
+            <div class="vertical-fanzine-club">
+                <img src="images/hs-fest/typo/finale/festival-sable.jpg" alt="typo-sable-1" onclick="openLightbox(this.src)">
+                <img src="images/hs-fest/typo/finale/hs-sable.jpg" alt="typo-sable-2" onclick="openLightbox(this.src)">
+                <img src="images/hs-fest/typo/finale/hs-mousse.jpg" alt="typo-sable-3" onclick="openLightbox(this.src)">
+            </div>
+            <p class="sous-titre">photographies et projections</p>
+
+            <div class="deux-images">
+                <img src="images/hs-fest/photos-et-projections/photo-2.jpg" alt="photo" onclick="openLightbox(this.src)">
+                <img src="images/hs-fest/photos-et-projections/photo-3.JPG" alt="photo" onclick="openLightbox(this.src)">
+            </div>
+
+            <div class="vertical-fanzine-club">
+                <img src="images/hs-fest/photos-et-projections/projection-1.JPG" alt="projection-1" onclick="openLightbox(this.src)">
+                <img src="images/hs-fest/photos-et-projections/projection-2.JPG" alt="projection-2" onclick="openLightbox(this.src)">
+                <img src="images/hs-fest/photos-et-projections/photo-1.JPG" alt="projection-3" onclick="openLightbox(this.src)">
+            </div>
+         </div>
+
+         <!-- Girl Power page -->
+          <div id="girl-power" class="page">
+            <p class="titre-page">Arte - Girl Power (2024)</p>
+            <div id="girl-power-video" class="video">
+                <video src="vidéos/girl-power/girl-power-rendu.mp4" controls type="video/mp4"></video>
+            </div>
+          </div>
+
+        <!-- Autres pages... -->
+    </div>
+
+    <!-- <script>
+        let currentSlide = 0;
+
+        function showPage(pageId) {
+            var pages = document.querySelectorAll('.page');
+            pages.forEach(function (page) {
+                page.classList.remove('active');
+            });
+            var selectedPage = document.getElementById(pageId);
+            selectedPage.classList.add('active');
+        }
+
+        function moveSlide(step) {
+            const slides = document.querySelectorAll('.carousel img');
+            currentSlide = (currentSlide + step + slides.length) % slides.length;
+            const offset = -currentSlide * 100;
+            document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+        }
+    </script> -->
+
+    <!-- Lightbox container -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="">
+    </div>
+
+    <!-- Script JavaScript pour le portfolio et la lightbox -->
+    <script>
+        // Fonction pour afficher une page
+        function showPage(pageId) {
+            var pages = document.querySelectorAll('.page');
+            pages.forEach(function (page) {
+                page.classList.remove('active');
+            });
+            var selectedPage = document.getElementById(pageId);
+            selectedPage.classList.add('active');
+        }
+
+        // Fonction pour naviguer dans le carousel
+        function moveSlide(step) {
+            const slides = document.querySelectorAll('.carousel img');
+            currentSlide = (currentSlide + step + slides.length) % slides.length;
+            const offset = -currentSlide * 100;
+            document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+        }
+
+        // Fonction pour ouvrir la lightbox
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = src;
+            lightbox.style.display = 'flex';
+        }
+
+        // Fonction pour fermer la lightbox
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
